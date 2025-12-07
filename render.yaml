@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tracklens-pocketbase
+    env: docker
+    region: frankfurt
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: POCKETBASE_ADMIN_EMAIL
+        sync: false
+      - key: POCKETBASE_ADMIN_PASSWORD
+        sync: false
