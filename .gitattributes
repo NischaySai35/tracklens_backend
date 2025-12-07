@@ -1,0 +1,13 @@
+# Text files: normalize line endings to LF
+*.js     text eol=lf
+*.sh     text eol=lf
+*.md     text eol=lf
+
+# JSON, migrations, config
+*.json   text eol=lf
+pb_migrations/*.js text eol=lf
+
+# Treat binary files as-is
+*.png    binary
+*.jpg    binary
+*.sqlite binary
